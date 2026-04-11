@@ -13,4 +13,5 @@ The following platforms exhibit the issue:
 
 The following platforms work as expected:
 - Apple M1, Julia 1.12.6, Clang 17.0.0
+- Apple M1, Julia 1.12.6, GCC 15.1.0
 
