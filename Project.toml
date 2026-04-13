@@ -1,2 +1,8 @@
 name = "c_calling_convention_test"
 uuid = "469732e7-1aca-427a-bf46-1fe811bbeb4c"
+
+[deps]
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+
+[compat]
+StaticArrays = "1.9.18"
