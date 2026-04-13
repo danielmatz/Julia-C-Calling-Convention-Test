@@ -15,6 +15,8 @@ The following platforms exhibit the issue:
 - x86_86-linux-gnu, sapphirerapids, Julia 1.12.6, GCC 8.5.0
 
 The following platforms work as expected:
+- arm64-apple-darwin24.0.0, apple-m1, Julia 1.12.6, Apple clang 17.0.0
+- arm64-apple-darwin24.0.0, apple-m1, Julia 1.12.6, GCC 15.1.0
 
 ## Example output showing issue
 
