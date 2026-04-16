@@ -9,14 +9,21 @@ To build and run the example, simply run `make` in the root of the repository.
 When a large struct is passed by value as the second argument, the bytes of the second argument match, but the pointer in the third argument does not match. When a small struct is passed as the second argument, the pointer in the third argument does match.
 
 The following platforms exhibit the issue:
-- x86_86-linux-gnu, broadwell, Julia 1.10.11, GCC 12.4.0
-- x86_86-linux-gnu, sapphirerapids, Julia 1.10.11, GCC 12.4.0
-- x86_86-linux-gnu, broadwell, Julia 1.12.6, GCC 12.4.0
-- x86_86-linux-gnu, sapphirerapids, Julia 1.12.6, GCC 8.5.0
+- x86_86-linux-gnu, broadwell, Julia 1.10.11, GCC 12.4.0, PackageCompiler 2.2.5
+- x86_86-linux-gnu, sapphirerapids, Julia 1.10.11, GCC 12.4.0, PackageCompiler 2.2.5
+- x86_86-linux-gnu, broadwell, Julia 1.12.6, GCC 12.4.0, PackageCompiler 2.2.5
+- x86_86-linux-gnu, sapphirerapids, Julia 1.12.6, GCC 8.5.0, PackageCompiler 2.2.5
+- x86_86-linux-gnu, sapphirerapids, Julia 1.10.11, GCC 12.4.0, PackageCompiler 2.2.5, PackageCompiler 2.1.17
+- x86_86-linux-gnu, broadwell, Julia 1.10.11, GCC 12.4.0, PackageCompiler 2.2.5, PackageCompiler 2.1.17
 
 The following platforms work as expected:
-- arm64-apple-darwin24.0.0, apple-m1, Julia 1.12.6, Apple clang 17.0.0
-- arm64-apple-darwin24.0.0, apple-m1, Julia 1.12.6, GCC 15.1.0
+- arm64-apple-darwin24.0.0, apple-m1, Julia 1.12.6, Apple clang 17.0.0, PackageCompiler 2.2.5
+- arm64-apple-darwin24.0.0, apple-m1, Julia 1.12.6, GCC 15.1.0, PackageCompiler 2.2.5
+- x86_86-linux-gnu, sapphirerapids, Julia 1.10.0, GCC 12.4.0, PackageCompiler 2.1.17
+- x86_86-linux-gnu, broadwell, Julia 1.10.5, GCC 12.4.0, PackageCompiler 2.1.17
+- x86_86-linux-gnu, broadwell, Julia 1.10.8, GCC 12.4.0, PackageCompiler 2.1.17
+- x86_86-linux-gnu, broadwell, Julia 1.10.10, GCC 12.4.0, PackageCompiler 2.1.17
+- x86_86-linux-gnu, broadwell, Julia 1.10.10, GCC 12.4.0, PackageCompiler 2.2.5
 
 ## Example output showing issue
 
